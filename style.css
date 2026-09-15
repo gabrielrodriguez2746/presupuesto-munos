@@ -1,0 +1,60 @@
+:root {
+  color-scheme: light dark;
+  --verde: #1b7f3a;
+  --ambar: #b8860b;
+  --rojo: #c62828;
+  --neutro: #666;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 1rem;
+  max-width: 720px;
+  margin-inline: auto;
+  line-height: 1.4;
+}
+
+header { margin-bottom: 1.5rem; }
+h1 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+#estado-carga { color: var(--neutro); font-size: 0.9rem; }
+
+section { margin-bottom: 2rem; }
+h2 { font-size: 1.1rem; border-bottom: 1px solid #ccc; padding-bottom: 0.25rem; }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+th, td { text-align: left; padding: 0.4rem 0.3rem; border-bottom: 1px solid #eee; }
+th { font-weight: 600; }
+
+.estado-verde { color: var(--verde); font-weight: 600; }
+.estado-ambar { color: var(--ambar); font-weight: 600; }
+.estado-rojo { color: var(--rojo); font-weight: 600; }
+.estado-neutro { color: var(--neutro); }
+
+dl { display: grid; grid-template-columns: 1fr auto; gap: 0.4rem 1rem; margin: 0; }
+dt { color: var(--neutro); }
+dd { margin: 0; text-align: right; font-weight: 600; }
+
+#controles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0.75rem 0 1rem;
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+}
+
+#controles label { font-size: 0.9rem; }
+#controles input[type="range"] { width: 100%; }
+#controles input[type="number"] {
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+
+#proyeccion-nota { font-size: 0.85rem; color: var(--neutro); }
+
+canvas { max-width: 100%; }
